@@ -1,7 +1,7 @@
 package com.example.hws.hw3;
 
 import java.time.Duration;
-//import java.util.Set;
+import java.util.Set;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -16,6 +16,7 @@ import com.example.driverFactory.DriverSetUp;
 
 public class Hw3 {
     public static void main(String[] args) throws InterruptedException {
+        /*
         WebDriver driver = DriverSetUp.setUpDriver();
         driver.get("https://www.google.com/search");
         Thread.sleep(9000);
@@ -28,9 +29,9 @@ public class Hw3 {
         searchField.sendKeys(Keys.ENTER);
         // driver.findElement(By.cssSelector("div[class='FPdoLc lJ9FBc']>center>input[value='Google Search']")).click(); // main page google seach button
         Thread.sleep(9000);
-
+        
         Actions actions = new Actions(driver);
-
+        
         actions.moveToElement(driver.findElement(By.cssSelector(
                 "div[class='yuRUbf']>div>span>a[href='https://www.guinnessworldrecords.com/account/register']")))
                 .perform();
@@ -63,7 +64,7 @@ public class Hw3 {
         driver.navigate().to("https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit");
         // String originalWindow = driver.getWindowHandle();
         // System.out.println("w3schools window id : " + originalWindow);
-
+        
         // try {
         //     driver.findElement(By.id("")).click();
         // } catch (Exception e) {
@@ -185,9 +186,10 @@ public class Hw3 {
         }
         Thread.sleep(9000);
         driver.quit();
-
+        */
+        
         // option 2
-        /*
+        
         WebDriver driver = DriverSetUp.setUpDriver();
         driver.get("https://www.google.com/search");
         Set<String> windowHandlerOne = driver.getWindowHandles();
@@ -364,6 +366,6 @@ public class Hw3 {
         System.out.println("================");
         Thread.sleep(9000);
         driver.quit();
-        */
+        
     }
 }

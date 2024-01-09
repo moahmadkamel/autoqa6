@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-// import java.time.Duration;
+import java.time.Duration;
 
 public class DriverSetUp {
     public static WebDriver setUpDriver(){
@@ -15,9 +15,9 @@ public class DriverSetUp {
         WebDriver driver = new ChromeDriver(options);
         driver.manage().window().maximize();
 
-        // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        // driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
-        // driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(5));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+        driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(5));
 
         return driver;
     }
