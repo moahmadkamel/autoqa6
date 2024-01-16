@@ -4,24 +4,9 @@ import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.example.driverFactory.DriverSetUp;
-import com.example.utils.ActionsClass;
-
-public class HomeWork3 {
-
-    static WebDriver driver;
-    static ActionsClass actionsClass;
-
-    @BeforeClass
-    public void preCondition() {
-        driver = DriverSetUp.setUpDriver();
-        actionsClass = new ActionsClass(driver);
-    }
+public class HomeWork3 extends BaseTest {
 
     @Test
     public void homework3() throws InterruptedException {
@@ -82,9 +67,5 @@ public class HomeWork3 {
         System.out.println(driver.getTitle());
         
     }
-    
-    @AfterClass
-    public void postConditions() {
-        driver.quit();
-    }
+
 }
