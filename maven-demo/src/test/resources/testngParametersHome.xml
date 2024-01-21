@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AllTests Suite">
+    <test name="AllTests">
+        <parameter name="search1" value="machine" />
+        <parameter name="search2" value="input" />
+        <parameter name="search3" value="meaning" />
+        <parameter name="search4" value="handball" />
+        <classes>
+            <class name="com.example.hws.hw4.ParametersTask5" />
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AllTests Suite">
+    <test name="AllTests">
+        <groups>
+            <run>
+                <include name="firstGroup" />
+                <include name="secondGroup" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.hws.hw4.grouping.Groups" />
+        </classes>
+    </test>
+</suite>
